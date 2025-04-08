@@ -1,0 +1,62 @@
+-Autoavaliação: Dev(B)
+
+---Levantamento e Análise de Requisitos---
+
+--Decomposição--
+É uma organização melhor para o desenvolvimento do projeto, dividindo algo grande em partes menores(fases).
+
+--Rastreabilidade--
+
+--Fase 1
+-Identificação
+Número identificador do requisito e suas conexões com outros requisitos
+lrp001 levantamento de requisito principal
+
+--Fase 2
+-Identificação dos requisitos principais
+Identificar os requisitos com maior importância para o projeto
+
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+
+--Fase 3
+-Especificação
+Levantar os requisitos especificos referentes aos principais
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+  [Lre001] Relaiza as reservas da quadra de beach tennis
+
+--Fase 4
+-Identficaçao dos atores 
+Identificar os atores integrantes do sistema
+
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+  [Lre001] Permitir que o cliente faça reservas da quadra de beach tennis
+  [Lre002] Permitir que o administrador faça reservas da quadra de beach tennis
+
+--Fase 5
+-Complementaçao funcional
+Funcionalidades complementares aos requisitos levantados
+
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+  [Lre001] Definirum calendário para facilitar o acesso à disponibilidade das quadras
+  [Lre002] Definnir a preferência de usuários
+
+--Fase 6
+-Funcionalidades fora de escopo inicial
+Funcionalidades sugeridas que fogem do escopo inicial
+
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+  [Lre001] Permitir que o cliente faça reservas da quadra de beach tennis
+  [Lre002] Permitir que o administrador faça reservas da quadra de beach tennis
+[Lre003] Permitir o controle de vendas de refrigerantes
+
+--Fase 7
+-Vaidação e verificação
+Vaidação e verificação dos requisitos realizadas pelos agentes no projeto
+
+Produto final:
+[Lrp001] Realizar a gestao de reserva de quadras esportivas de beach tennis e futebol
+  [Lre001] Permitir que o cliente faça reservas da quadra de beach tennis
+  [Lre002] Permitir que o administrador faça reservas da quadra de beach tennis
+  [Lre003] Definirum calendário para facilitar o acesso à disponibilidade das quadras
+  [Lre004] Definnir a preferência de usuários
+[Lre005] Permitir o controle de vendas de refrigerantes
