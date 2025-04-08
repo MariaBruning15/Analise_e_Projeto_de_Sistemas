@@ -2,6 +2,8 @@
 
 ---Levantamento e Análise de Requisitos---
 
+--Levantamento
+
 --Decomposição--
 É uma organização melhor para o desenvolvimento do projeto, dividindo algo grande em partes menores(fases).
 
@@ -60,3 +62,147 @@ Produto final:
   [Lre003] Definirum calendário para facilitar o acesso à disponibilidade das quadras
   [Lre004] Definnir a preferência de usuários
 [Lre005] Permitir o controle de vendas de refrigerantes
+
+—-Levantamento de requisitos–-
+
+Baseados na entrevista feita 01/04/25
+
+–Empréstimo de materiais–
+
+[LRP001] Permitir empréstimo/devolução de materiais e o gerenciamento de achados e perdidos.
+	[LRE001] Permitir empréstimo de materiais.
+	[LRE001] Permitir devolução de materiais emprestados
+	[LRE002]Permitir gerenciamento de achados e perdidos
+
+–Usuários–
+
+[LRP002] - Cadastro e Identificação dos Usuários
+  [LRE001] - Permitir cadastro de usuários com campos específicos: nome, tipo (aluno, professor, técnico etc).
+  [LRE002] - Para alunos: registrar série e curso.
+  [LRE003] - Para professores: registrar turma que utilizará o material.
+  [LRE004] - Associar o perfil do usuário ao tipo de permissão no sistema.
+
+
+–Registros–
+
+[LRP003] - Permitir o registro do Empréstimo.
+  [LRE001] - Registrar data e horário da retirada.
+  [LRE002] - Registrar data e horário da devolução.
+  [LRE003] - Identificar a pessoa responsável pelo empréstimo.
+  [LRE004] - Permitir visualizar e editar o histórico de empréstimos do usuário.
+
+
+–Estoque–
+
+[LRP004] - Gerenciamento do Estoque
+  [LRE001] - Controlar a quantidade de itens disponíveis para empréstimo.
+  [LRE002]- Atualizar o estoque automaticamente conforme empréstimos e devoluções.
+  [LRE003] - Indicar quando um item estiver indisponível.
+  [LRE004] - Emitir relatório de materiais em uso, disponíveis e danificados.
+
+–Verifcação–
+
+  [LRP005] - Verificação da Condição dos Materiais
+  [LRE001] - Registrar a condição do material no momento do empréstimo.
+  [LRE002]- Registrar a condição do material no momento da devolução.
+  [LRE003]- Permitir registro de danos com campo de descrição e, se necessário, imagens.
+  [LRE004] - Associar os danos ao histórico do item e ao usuário responsável.
+
+
+-Controle de tempo–
+
+[LRP006] - Controle de Tempo de Empréstimo
+  [LRE001] - Definir tempo de empréstimo por tipo de item.
+  [LRE002] - Impedir devolução antes do prazo mínimo (1 dia).
+  [LRE003] - Permitir personalização de prazos conforme demanda/contexto.
+  [LRE004] - Alertar sobre empréstimos prestes a vencer ou vencidos.
+
+
+-Justificativas–
+
+[LRP007] - Justificativas e Responsabilidades
+  [LRE001] - Solicitar justificativa para empréstimos de longa duração.
+  [LRE002] - Permitir preenchimento de justificativa no sistema, com campo descritivo.
+  [LRE003] - Exigir aprovação do orientador para empréstimos especiais.
+  [LRE004] - Permitir upload de termo de responsabilidade assinado pela SEPAE.
+
+
+-Tipos de usos–
+
+[LRP008] - Tipos de Uso (Pessoal vs. Coletivo)
+  [LRE001]  - Para uso pessoal, permitir mais liberdade no processo.
+  [LRE002]  - Para uso coletivo, exigir registro completo com mais campos   obrigatórios.
+  [LRE003] - Diferenciar os fluxos no sistema conforme o tipo de uso.
+  [LRE004]  - Identificar o tipo de uso ao iniciar o empréstimo.
+
+
+-Quantidade por empréstimos–
+
+[LRP009] - Quantidade de Materiais por Empréstimo
+  [LRE001] - Permitir múltiplos empréstimos por usuário.
+  [LRE002] - Exibir no momento do empréstimo a lista de itens já emprestados.
+  [LRE003] - Sugerir limite com base na média de uso, mas sem bloqueios rígidos.
+
+
+-Laudos–
+
+[LRP010] - Inclusão e Registro de Laudos
+  [LRE001] - Permitir registro de laudos associados ao item.
+  [LRE002]- Indicar se o laudo veio por e-mail ou foi incluído diretamente.
+  [LRE003]- Registrar o responsável pela emissão do laudo (geralmente a Seção [Pedagógica).
+  [LRE004]- Associar laudos a materiais com histórico problemático.
+
+
+-Setores–
+
+[LRP011] - Empréstimos por Setores (sem técnico disponível)
+  [LRE001] - Permitir alocação direta de materiais a setores.
+  [LRE002] - Registrar motivo da alocação direta (ex: ausência de técnico).
+  [LRE003] - Marcar se o empréstimo foi realizado com ou sem mediação da Assistência.
+
+
+-Livros–
+
+[LRP012] - Empréstimo de Livros Didáticos pela Assistência
+  [LRE001] - Diferenciar no sistema os livros emprestados pela Assistência e pela Biblioteca.
+  [LRE002] - Associar os livros obrigatórios como responsabilidade da Assistência.
+  [LRE003] - Impedir empréstimo de livros didáticos pela Biblioteca, se já registrados na Assistência.
+
+--Análise
+
+--Fase 1
+-Documentação dos requisitos
+Feito por pessoas de alto nivel, que estão acima do projeto, devem seguir um padrão nacional para que não haja erros
+
+--Fase 2
+-Cadastro de entidades
+Cadastra informações dos sistemas, um resgitro de dados de entidades  
+(Entidade representa um objeto algo que podem ser separado em classes EXEMPLO: usuario, aluno, equipes )
+Entidade concreta: Algo fisico
+Entidade imaginaria: Algo que n é tocavel(como o TRABALHO)
+
+--Fase 3
+-Identificação de dependências/correlações
+
+Determina as relações entre as entidades do projeto
+Ex: {R001] Para realizar uma reserva é necessario um cliente.
+
+--Fase 4
+-Definição de campos e carcterísticas
+Define campos de caracteristicas das entidades, algo que deve ser informado.Pode ser informado pelo cliente mas pode ser definido pelo analista.
+
+Ex: [ARR-001] Cadastro de cliente - campos *Nome,  *CPF, telefone
+
+--Fase 5
+-Regras de Negócio
+Limitações dos requisitos já existentes, sempre relacionadas a requisitos funcionais
+
+--Fase 6
+-Identificação de requisitos não funcionais
+Não são uma funcionalidade mas se relacionam, podem se relacionar com: tempo, segurança, usabilidade, disponibilidade, compatibilidade
+servem para manter a qualidade do sistema
+colocar somente se necessario
+
+--Fase 7
+-Formatação
+Formatação dos requisitos levantados seguindo um padrão adequado
