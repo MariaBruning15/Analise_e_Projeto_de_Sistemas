@@ -1,0 +1,76 @@
+--Diagrama de casos de uso--
+
+Tipo de diagrama comportamental da UML(Unified Modeling Language) feito para representar as funcionalidades de um sistema com foco na perspectiva dos atores, buscando observar o comportamento externo do sistema.
+Diagramas comportamentais focam mais no usuário e buscam centrar o cliente, costumam ser menos técnicos.
+
+-Elementos do diagrma:
+-Ator;
+-Caso de Uso;
+-Sistema;
+-Associação;
+-Include;
+-Extend;
+-Generalização.
+
+--A aplicação escolhida para fazer o diagrama foi o PlantUml--
+
+@startuml
+
+left to right direction
+actor cli as "Cliente"
+actor adm as "Administrador"
+actor func as "Funcionario"
+
+
+rectangle "Sistema de Reserva de Quadra"{
+
+    usecase "Consultar calendario" as cu01
+    usecase "Buscar reserva" as cu02
+    usecase "Realizar reserva" as cu03
+    usecase "Verificar disponibilidade" as cu04
+    usecase "Cancelar reserva" as cu05
+    usecase "Gerenciar todas reservas" as cu06
+    usecase "Mantenir quadra" as cu07
+    usecase "Gerenciar pagamento" as cu08
+    usecase "Mantenir materiais" as cu09
+    usecase "Cancelar pagamento" as cu10
+    usecase "Escolher quadra" as cu11
+    usecase "Reagendar reserva" as cu12
+     
+    cu03 .> cu04 : <<include>>
+    cu08 .> cu03 : <<include>>
+    cu03 .> cu11 : <<include>>
+    cu05 <. cu02 : <<extends>>
+    cu10 <. cu08 : <<extends>>
+    cu03 <. cu12 : <<extends>>
+
+     
+    }
+
+
+
+cli --> cu01
+cli --> cu02
+cli --> cu03
+cli --> cu04
+cli --> cu05
+
+adm --|> cli
+adm --> cu06
+adm --> cu07
+
+func --> cu08
+adm --|> func
+func --> cu09
+
+
+@enduml
+/' 
+Consultar calendário
+Buscar reserva
+Realizar reserva
+Verificar disponibilidade
+Cancelar reserva
+Gerenciar todas reservas
+Cadastrar quadra                    
+'/
