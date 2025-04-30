@@ -1,0 +1,423 @@
+Autoavaliação:Dev (B)
+
+--Continuação da documentação de requisitos--
+
+A equipe continuou a documentação dos requisitos levantados durante a entrevista.
+
+[LRP001] Permitir empréstimo/devolução de materiais
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+
+REQ - 001
+Manutenir no sistema o empréstimo de materiais 
+
+Alta
+
+[LRE01-001]
+O sistema deve realizar os empréstimos utilizando o RA do aluno
+REQ - 002
+Manutenir devolução de materiais 
+      
+  Alta
+
+[LRE01-002]
+O sistema deve permitir a manutenção das devoluções, consultando pelo RA do aluno
+
+
+
+[LRP002] Permitir gerenciamento de achados e perdidos.
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 003
+Permitir o registro de série e curso
+
+médio
+
+[LRE01-001]
+Somente o aluno pode registrar série e curso, mas pode ser alterado pelo técnico
+REQ - 004
+Permitir que o sistema atribua tipos de permissão 
+
+alta
+
+[LRE02-002]
+O sistema deve restringir algumas áreas, de acordo com a hierarquia do usuário. 
+
+
+
+
+[LRP003] - Cadastro/Identificação dos Usuários
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+
+REQ-005
+
+Associação de perfil
+
+Alta
+
+[LRE01-001]
+Associar o do perfil do usuário ao tipo de permissão no sistema, aplicando restrições
+
+REQ-006
+
+Cadastro
+
+Alta
+[LRE02-002]
+Associar o cadastro e a identificação do usuário, se baseando no Login.
+
+REQ-007
+
+Permitir o cadastro de usuário.
+
+Alta
+[LRE03-003]
+Cadastrar usuários com campos específicos: Aluno, Professor,
+Técnico e Servidores.
+
+
+REQ-08
+
+Registrar informações sobre o empréstimo 
+
+
+Alta
+[LRE04-004]
+O sistema deve registrar a série e curso de cada aluno, caso seja um professor, ele deverá registrar a turma que realizou o empréstimo
+
+
+
+
+
+
+[LRP004] - Permitir o registro do Empréstimo.
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+
+REQ - 09
+Registrar data e horário da retirada.
+
+Médio
+
+[LRE001]
+O sistema deve registrar a hora exata da retirada, se baseando no horário de Brasília. 
+
+REQ - 010
+Registrar data e horário da devolução
+
+Baixo
+
+[LRE002]
+O sistema deve registrar a hora exata da devolução, se baseando no horário de Brasília. 
+
+REQ - 011
+Identificar o responsável pelo empréstimo.
+
+Alto
+
+[LRE003]
+O sistema deve solicitar o nome de quem retirou o item, se for um aluno, deverá solicitar o RA.
+
+REQ - 012
+Visualizar e editar o histórico de empréstimos.
+
+Médio
+
+[LRE004]
+O sistema deve permitir que os servidores possam editar/visualizar o histórico de empréstimos. 
+
+
+
+
+[LRP005] -  Verificação das condições dos materiais.
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+
+REQ - 013
+Verificar as condições dos materiais na entrega.
+
+Médio
+
+[LRE001]
+O sistema deve verificar as condições do material no momento da entrega, para comparações futuras.
+
+REQ - 014
+Verificar as condições dos materiais na devolução,
+
+Médio
+
+[LRE002]
+O sistema deve verificar as condições do material após a devolução, se estiver quebrado o sistema deve alertar o técnico
+
+REQ - 015
+Registrar os danos materiais (caso exista)
+
+Médio
+
+[LRE003]
+Permitir registro de danos com campo de descrição e, se necessário, imagens
+REQ - 016
+Associar danos ao responsável. 
+      
+      Médio
+
+[LRE004]
+Após a verificação dos materiais, se houver danos, os danos serão associados aos responsáveis.
+
+
+
+
+
+[LRP006] -  Gerenciamento do Estoque
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 017
+Controle de quantidade itens.
+Alta
+[LRE001]
+O sistema deverá fazer o controle da quantidade de itens disponíveis para empréstimo
+REQ - 018
+Atualizar estoque automaticamente.
+Alta
+[LRE002]
+O sistema deve atualizar o estoque automaticamente conforme empréstimos e devoluções.
+REQ - 019
+Indicar quando um item estiver indisponível.
+Alta
+[LRE003]
+O sistema deve consultar no banco de dados se o item está disponível ou não.
+REQ - 020 
+Emitir relatório 
+Média
+[LRE004]
+O sistema deve emitir relatório de materiais em uso, disponíveis e danificados.
+
+
+
+
+
+[LRP007] -  Verificação da Condição dos Materiais.
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 021
+Registrar a condição do material.
+Alta
+[LRE001]
+Registrar a condição do material no momento do empréstimo. 
+REQ - 022
+ Registrar a condição do material.
+
+Alta
+[LRE002]
+ Registrar a condição do material no momento da devolução.
+REQ - 023
+ Registrar a condição do material no momento da devolução.
+
+Alta
+[LRE003]
+O sistema deve permitir registro de danos com campo de descrição e, se necessário, imagens.
+REQ - 024
+Associar os danos ao histórico.
+
+Alta
+[LRE004]
+O sistema deve associar os danos ao histórico do item e ao usuário responsável.
+
+
+
+[LRP008] -  Controle de Tempo de Empréstimo
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 025
+Definir tempo de empréstimo
+Média
+[LRE001]
+Definir tempo de empréstimo por tipo de item.
+REQ - 026
+Impedir devolução em casos específicos.
+Média
+[LRE001]
+Impedir devolução antes do prazo mínimo (1 dia).
+REQ - 027
+Permitir personalização de prazos
+Média
+[LRE001]
+ O sistema deve permitir personalização de prazos conforme demanda/contexto.
+REQ - 028
+Alertar sobre empréstimos
+Alta
+[LRE001]
+ O sistema deve alertar sobre empréstimos prestes a vencer ou vencidos.
+
+
+
+[LRP009] -   Inclusão e Registro de Laudos
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 029
+Permitir registro de laudos
+Médio
+[LRE001]
+O sistema deve permitir o registro de laudos associados ao item.
+REQ - 030
+Indicar por onde o laudo veio.
+Alta
+[LRE001]
+O sistema deve indicar se o laudo veio por e-mail ou foi incluído diretamente.
+REQ - 031
+ Registrar o responsável pela emissão do laudo
+Alta
+[LRE001]
+O sistema deve registrar o responsável pela emissão do laudo (geralmente a Seção Pedagógica).
+REQ - 032
+Associar laudos a materiais
+Média
+[LRE001]
+O sistema deve associar laudos a materiais com histórico problemático.
+
+
+
+
+
+
+[LRP0010] -   Quantidade de Materiais por Empréstimo 
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 033
+Permitir múltiplos empréstimos
+Alta
+[LRE001]
+O sistema deve permitir múltiplos empréstimos por usuário.
+REQ - 034
+ Exibir a lista de itens já emprestados.
+Média
+[LRE001]
+Exibir no momento do empréstimo a lista de itens já emprestados.
+REQ - 035
+ Sugerir limite
+Alta
+[LRE001]
+Sugerir limite com base na média de uso, mas sem bloqueios rígidos.
+
+
+
+
+
+
+
+[LRP011] - Justificativas e Responsabilidades
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 036
+Solicitar justificativa para empréstimos de longa duração.
+Alta
+
+[LRE001]
+O sistema deve solicitar uma justificativa, data e nome do orientador para o empréstimo de longa duração 
+
+REQ - 037
+Exigir aprovação do orientador para empréstimos especiais
+Alta
+
+[LRE003]
+O sistema deve informar o orientador para que ele possa confirmar e se responsabilizar por materiais de longa duração
+
+REQ - 038
+ Permitir upload de termo de responsabilidade assinado pela SEPAE
+Alta
+
+[LRE004]
+O sistema, deve exigir o upload do termo com assinatura do responsável, Orientador e da SEPAE.
+
+
+
+[LRP012] -   Empréstimos por Setores
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+REQ - 039
+Permitir alocação
+Alta
+[LRE001]
+O sistema deve permitir alocação direta de materiais a setores.
+REQ - 040
+Registrar motivo da alocação
+Alta
+[LRE001]
+O sistema deve registrar motivo da alocação direta (ex: ausência de técnico).
+REQ - 041
+Registrar detalhes sobre o empréstimo
+Alta
+[LRE001]
+O sistema deve marcar se o empréstimo foi realizado com ou sem mediação da Assistência.
+
+
+[LRP013] - Empréstimo de Livros Didáticos pela Assistência
+ID
+Descrição
+Prioridade
+Origem
+Critério de avaliação
+
+REQ - 041
+Diferenciar os livros emprestados.
+
+Baixo
+[LRE013-001]
+Diferenciar no sistema os livros emprestados pela Assistência e pela Biblioteca
+
+REQ - 042
+Associar livros responsáveis pela assistência
+
+Baixo
+[LRE013-001]
+O ssociar os livros obrigatórios como responsabilidade da Assistência
+
+REQ - 043
+Impedir empréstimos pela biblioteca
+
+Baixo
+[LRE013-001]
+O sistema deve impedirImpedir empréstimo de livros didáticos pela Biblioteca, se já registrados na Assistência. 
+
+
+--Desenvolvimento do der--
+
+A equipe desenvolveu o Digrama de Entidade e Relacionamento inicial do sistema de empréstimos.
+
